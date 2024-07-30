@@ -1,0 +1,140 @@
+%%%%%%%%% CLASSE DE DOCUMENTO UTILIZADA %%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,openright,oneside,a4paper,chapter=TITLE]{abntex2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%% PACOTES UTILIZADOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[alf, abnt-emphasize=bf, abnt-full-initials=yes]{abntex2cite}
+\usepackage{indentfirst}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%% EDIÇÃO PRÉ-TEXTUAL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titulo{Título do projeto de pesquisa.}
+
+\autor{Nome do discente}
+
+\instituicao{
+    \begin{center}
+        Universidade Federal de Catalão
+        \par
+        Instituto de Matemática e Tecnologia
+        \par
+        Programa de Pós-Graduação em Modelagem e Otimização
+    \end{center}
+}
+
+\local{Catalão - GO}
+
+\data{2024}
+
+\tipotrabalho{Projeto de Pesquisa}
+
+\orientador{Nome do orientador}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%% EDIÇÃO DA CAPA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlingpage}
+
+  \noindent\makebox[\textwidth][c]{
+  \noindent\begin{minipage}[l][1.5cm][c]{2cm}
+  \includegraphics[scale=0.5]{Figuras/logoPPGMO.jpg} \\
+  \end{minipage}
+  \noindent\begin{minipage}[c][1.5cm][c]{13.5cm}
+  {\footnotesize\MakeUppercase{\imprimirinstituicao}}
+  \end{minipage}
+  \begin{minipage}[l][1.5cm][c]{2.5cm}
+  \includegraphics[scale=.3]{Figuras/ufcat.jpg}  \\
+  \end{minipage}
+}
+  \par
+  \centering
+  \vspace*{\fill}
+  {\bfseries\large\imprimirautor}
+  \par
+  \vspace*{\fill}
+  {\Large\MakeUppercase{\imprimirtitulo}}
+  \par
+  \vspace*{\fill}
+  {\bfseries\large\imprimirtipotrabalho}
+  \par
+  \vspace*{\fill}
+  {\large\imprimirlocal}
+  \par
+  {\large\imprimirdata}
+  \vspace*{1cm}
+\end{titlingpage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%% EDIÇÃO DA FOLHA DE ROSTO %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlingpage}
+  \centering
+  \vspace*{1cm}
+  {\large\MakeUppercase\imprimirautor}
+  \par
+  \vspace*{\fill}\vspace*{\fill}
+  {\ABNTEXchapterfont\Large\MakeUppercase{\imprimirtitulo}}
+  \par
+  \vspace*{\fill}
+  {\large{Orientador: }\imprimirorientador}
+  \par
+  \vspace*{\fill}
+  \vspace*{2cm}
+  {\large\imprimirlocal}
+  \par
+  {\large\imprimirdata}
+  \vspace*{\fill}
+\end{titlingpage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%% RESUMO EM PORTUGUÊS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{resumo}
+  Este trabalho tem como objetivo...
+  
+  \vspace{\onelineskip}
+  
+  \noindent
+  \textbf{Palavras-chave}: palavra1. palavra2. palavra3.
+\end{resumo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%% RESUMO EM INGLÊS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\resumoname}{Abstract}
+\begin{resumo}[Abstract]
+  \begin{otherlanguage*}{english}
+    This research project aims to...
+    
+    \vspace{\onelineskip}
+    
+    \noindent
+    \textbf{Keywords}: keyword1. keyword2. keyword3.
+  \end{otherlanguage*}
+\end{resumo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents* %SUMÁRIO
+
+\chapter{Introdução}
+\textual %NUMERAÇÃO DAS PÁGINAS
+
+
+\chapter{Objetivos}
+
+
+\chapter{Metodologia}
+
+
+\chapter{Resultados esperados}
+
+
+\bibliography{citation} %REFERÊNCIAS BIBLIOGRÁFICAS
+
+\end{document}
